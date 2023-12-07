@@ -8,12 +8,13 @@ html {
 }
  
 body{
-    display: table-cell;
-  vertical-align: middle;
+    display:table-cell;
+    vertical-align: middle;
     margin: 0px;
-    background-color: #e6ebf2;
+    background-color:aliceblue;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: "Lexend";
 }
 button{
     margin: 10px;
@@ -27,8 +28,7 @@ h1{
 } 
 .container{
     margin: 20px;
-    border-radius: 20px;
-    /* background-color: #183D3D; */
+    border-radius: 20px; 
 }
 .nav-bar{
     display: flex;
@@ -74,9 +74,8 @@ h1{
     height: 100%;
 }
 .banner-information, .education{
-    /* background-color: #5C8374; */
     border: 1px solid rgb(201, 221, 236);
-    box-shadow: 1px 2px lightblue;
+    box-shadow: 1px 2px rgb(124, 145, 153);
     border-radius: 10px;
     display: flex;
     padding: 20px;
@@ -124,11 +123,11 @@ h1{
     width: 300px;
     margin: 10px;
     padding: 10px;
-    border: 2px solid rgb(201, 221, 236);
-    border-radius: 5px;
+    border: 2px solid rgb(199, 219, 234);
+    border-radius: 15px;
 } 
 .project-img{
-    border: 1px solid grey;
+  border: 2px solid rgb(199, 219, 234);
     border-radius: 30px;
     width: 250px;
     height: 250px;
@@ -136,7 +135,7 @@ h1{
 .project-img-hidden{
   position:absolute;
   visibility: hidden;
-  border: 1px solid grey;
+  border: 2px solid rgb(199, 219, 234);
   border-radius: 30px;
   width: 250px;
   height: 250px;
