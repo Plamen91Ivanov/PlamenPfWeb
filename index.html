@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plamen Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;500&display=swap" rel="stylesheet">
+  </head>
+<style>
+  body{
+    font-family: "Lexend";
+  }
+</style>
+<body>
+  <div class="container">
+      <div class="nav-bar">
+            <div class="contact-container">
+              <div  >
+                <div class="contact-icon-box">
+                  <img class="contact-icon" src="./img/mail.png">
+                  <p>ivanov91plamen@gmail.com</p>
+                </div>
+                <div class="contact-icon-box">
+                  <img class="contact-icon" src="./img/phone-call.svg">
+                  <p>0895952504</p>
+                </div>
+              </div>
+                <div >
+                  <a href="https://github.com/Plamen91Ivanov" target="_blank" title="https://github.com/Plamen91Ivanov">
+                    <img class="git-icon" src="./img/github.svg">
+                  </a> 
+                </div>
+            </div> 
+        </div>
+      <div class="banner">
+        <div class="banner-information">
+            <div class="badges">
+              <h2>Hi i'm Plamen</h2>
+            </div>
+            <div class="badges">
+              <p>Bachelor Electronics Engineer </p>
+              <h3>Softuni Courses</h3>
+              <p>
+                    - Software Technologies
+                    - Programming Fundamentals
+                    - C# OOP Advanced
+                    - C# Web
+                  -JS Advance
+                  -JS Web
+                  -Front-End
+              </p>
+            </div>
+        </div>
+         <div class="banner-image">
+            <img class="image" src="./img/1.jpg">
+        </div> 
+      </div>
+      <!-- <div class="skills">
+        <div>
+            <h1>Skills</h1>
+        </div>
+        <div class="skills-box">
+            <img class="skill-img" src="./img/NET_Core_Logo.svg.png">
+            <img class="skill-img"  src="./img/Unofficial_JavaScript_logo_2.svg.png">
+            <img class="skill-img"  src="./img/sql-database-generic.svg">
+            <img class="skill-img"  src="./img/React-icon.svg.png">
+        </div>
+      </div> -->
+      <div class="projects">
+        <!-- <div>
+            <h2>Projects</h2>
+        </div> -->
+        <div class="project-box">
+            <div class="project">
+                <a href='https://plamen91ivanov.github.io/Algorithm-Visualizer/' target="_blank">
+                  <div class="project-img-box" onmouseenter="AddVisability()" 
+                  onmouseleave="RemoveVisability()">
+                    <img class="project-img" src="./img/pathfinding.jpg">
+                    <img class="project-img-hidden" src="./img/sorting.jpg" id="project-img">
+                    <div class='blinking-dot'>
+                      <div class='dot'></div>
+                    </div>
+                  </div>
+                </a>
+                <h2>Algorithms Visualiser</h2>
+                <div class="skills-box">
+                  <img class="skill-img"  src="./img/React-icon.svg.png"> 
+               </div>
+               <div>
+                <a href='https://github.com/Plamen91Ivanov/Algorithm-Visualizer' target="_blank" 
+                onmouseenter="AddGitBackgroundColorFirst()" 
+                onmouseleave="RemoveGitBackgroundColorFirst()">
+                  <img class="git-icon" id="first-git-icon" src="./img/github.svg">
+                </a> 
+               </div>
+               <div class="project-information">
+                <p>
+                  Visualise some sorting and pathfinding algoriths
+                </p>
+               </div>
+            </div>
+
+            <div class="project" onmouseenter="ChangeBackgroundColor()" 
+            onmouseleave="RemoveBackgroundColor()">
+              <div class="project-img-box">
+                <img class="project-img"  src="./img/noImage.jpg"> 
+              </div>
+              <h2>Doctor Information</h2>
+              <div class="skills-box">
+                <img class="skill-img" src="./img/NET_Core_Logo.svg.png">
+            <img class="skill-img"  src="./img/Unofficial_JavaScript_logo_2.svg.png">
+            <img class="skill-img"  src="./img/sql-database-generic.svg">
+            <img class="skill-img"  src="./img/bootstrap-logo.png">
+            </div>
+            <div>
+              <a href="https://github.com/Plamen91Ivanov/DoctorInformation" target="_blank">
+                <img class="git-icon" src="./img/github.svg" id="first-icon">
+              </a> 
+             </div>
+             <div class="project-information">
+              <p>
+                 Web app for finding,rating and commenting on doctors 
+              </p>
+             </div>
+            </div>
+            <div class="project" onmouseenter="ChangeBackgroundColorSecond()" 
+            onmouseleave="RemoveBackgroundColorSecond()" >
+              <img  class="project-img" src="./img/noImage.jpg"  > 
+              <h2>Shop</h2>
+              <div class="skills-box">
+                <img class="skill-img" src="./img/NET_Core_Logo.svg.png">
+            <img class="skill-img"  src="./img/Unofficial_JavaScript_logo_2.svg.png">
+            <img class="skill-img"  src="./img/sql-database-generic.svg">
+            <img class="skill-img"  src="./img/bootstrap-logo.png">
+            </div>
+            <div>
+              <a href="https://github.com/Plamen91Ivanov" target="_blank">
+                <img class="git-icon" src="./img/github.svg" id="second-icon">
+              </a> 
+             </div>
+             <div class="project-information">
+              <p>
+                E-commers shop app 
+              </p>
+             </div>
+            </div>
+            <div class="project">
+              <a href="https://gorsko-kupane.netlify.app/#" target="_blank">
+              <div class="project-img-box">
+              <img class="project-img"  src="./img/forest.jpg">
+              <div class='blinking-dot'>
+                <div class='dot'></div>
+              </div>
+              </div>
+              </a>
+              <h2>ForestBath </h2> 
+              <div class="skills-box">
+                <img class="skill-img"  src="./img/Unofficial_JavaScript_logo_2.svg.png">
+            </div>
+            <div>
+                 <a href="https://github.com/Plamen91Ivanov/ForestBath" target="_blank"
+                    onmouseenter="AddGitBackgroundColorFourth()" onmouseleave="RemoveGitBackgroundColorFourth()">
+                      <img class="git-icon" id="fourth-git-icon" src="./img/github.svg">
+                   </a> 
+             </div>
+             <div class="project-information">
+              <p>
+                Simple web page 
+              </p>
+             </div>
+            </div>
+        </div>
+      </div>
+  </div> 
+ 
+  
+
+<script src="script.js"></script>
+</body>
+</html>

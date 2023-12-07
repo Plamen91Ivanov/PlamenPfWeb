@@ -1,0 +1,95 @@
+html, body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    /* For Presentation */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #12161b;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    background-color: #23d128;
+    border-radius: 50%;
+    position: relative;
+  }
+  div:before {
+    content: "";
+    width: inherit;
+    height: inherit;
+    border: 5px solid #23d128;
+    border-radius: inherit;
+    position: absolute;
+    z-index: -10;
+    opacity: 0;
+    animation: 2s expand cubic-bezier(0.29, 0, 0, 1) infinite;
+    animation-delay: 1s;
+  }
+  
+  @keyframes expand {
+    /* Starting at 1 to prevent IOS flicker */
+    1% {
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      width: 550%;
+      height: 550%;
+      opacity: 0;
+      border-color: #fff;
+      background-color: none;
+      border-width: 2px;
+    }
+  }
+
+  
+.blinkingdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    background-color: #23d128;
+    border-radius: 50%;
+    position: relative;
+  }
+  .blinkingdiv:before {
+    content: "";
+    width: inherit;
+    height: inherit;
+    border: 5px solid #23d128;
+    border-radius: inherit;
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+    animation: 2s expand cubic-bezier(0.29, 0, 0, 1) infinite;
+    animation-delay: 1s;
+  }
+  
+  @keyframes expand {
+    /* Starting at 1 to prevent IOS flicker */
+    1% {
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      width: 550%;
+      height: 550%;
+      opacity: 0;
+      border-color: #fff;
+      background-color: none;
+      border-width: 2px;
+    }
+  }
